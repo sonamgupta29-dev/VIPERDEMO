@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Repo" representedClassName=".Repo" syncable="YES" codeGenerationType="class">
+        <attribute name="adminPermission" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="issueCount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="licenceName" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="pullPermission" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="pushPermission" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="repoDescription" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Repo" positionX="-63" positionY="-18" width="128" height="148"/>
+    </elements>
+</model>

@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		943D078C2471E1D90019FB95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D078B2471E1D90019FB95 /* ViewController.swift */; };
+		943D078E2471E2090019FB95 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D078D2471E2090019FB95 /* LoadingView.swift */; };
+		944EF20F2470026C006352DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF20E2470026C006352DD /* AppDelegate.swift */; };
+		944EF2162470026C006352DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944EF2142470026C006352DD /* Main.storyboard */; };
+		944EF2192470026C006352DD /* YatraApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 944EF2172470026C006352DD /* YatraApp.xcdatamodeld */; };
+		944EF21B2470026E006352DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944EF21A2470026E006352DD /* Assets.xcassets */; };
+		944EF21E2470026E006352DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944EF21C2470026E006352DD /* LaunchScreen.storyboard */; };
+		944EF23F24700441006352DD /* OctokitListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF23924700441006352DD /* OctokitListPresenter.swift */; };
+		944EF24024700441006352DD /* OctokitListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF23A24700441006352DD /* OctokitListRouter.swift */; };
+		944EF24124700441006352DD /* OctokitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF23B24700441006352DD /* OctokitListViewController.swift */; };
+		944EF24224700441006352DD /* OctokitListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF23C24700441006352DD /* OctokitListProtocols.swift */; };
+		944EF24324700441006352DD /* OctokitListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF23D24700441006352DD /* OctokitListInteractor.swift */; };
+		944EF24424700441006352DD /* OctokitListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 944EF23E24700441006352DD /* OctokitListViewController.xib */; };
+		944EF25C247004D5006352DD /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF24C247004D5006352DD /* NetworkOperation.swift */; };
+		944EF25D247004D5006352DD /* ResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF24D247004D5006352DD /* ResponseProtocol.swift */; };
+		944EF25E247004D5006352DD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF24E247004D5006352DD /* Service.swift */; };
+		944EF25F247004D5006352DD /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF24F247004D5006352DD /* ServiceProtocol.swift */; };
+		944EF260247004D5006352DD /* DataOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF250247004D5006352DD /* DataOperationProtocol.swift */; };
+		944EF261247004D5006352DD /* VMultipartImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF251247004D5006352DD /* VMultipartImage.swift */; };
+		944EF262247004D5006352DD /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF252247004D5006352DD /* ServiceConfig.swift */; };
+		944EF263247004D5006352DD /* MultipartRquest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF253247004D5006352DD /* MultipartRquest.swift */; };
+		944EF264247004D5006352DD /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF254247004D5006352DD /* RequestProtocol.swift */; };
+		944EF265247004D5006352DD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF255247004D5006352DD /* Response.swift */; };
+		944EF266247004D5006352DD /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF256247004D5006352DD /* RequestMethod.swift */; };
+		944EF267247004D5006352DD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF257247004D5006352DD /* Request.swift */; };
+		944EF268247004D5006352DD /* JSONOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF258247004D5006352DD /* JSONOperationProtocol.swift */; };
+		944EF269247004D5006352DD /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF259247004D5006352DD /* ApiConfig.swift */; };
+		944EF26A247004D5006352DD /* DataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF25A247004D5006352DD /* DataOperation.swift */; };
+		944EF26B247004D5006352DD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF25B247004D5006352DD /* NetworkError.swift */; };
+		944EF26E247005C0006352DD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF26D247005C0006352DD /* Strings.swift */; };
+		944EF27124700614006352DD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF27024700614006352DD /* String.swift */; };
+		944EF27324700660006352DD /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF27224700660006352DD /* Dictionary.swift */; };
+		944EF27624700758006352DD /* OctokitListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF27424700758006352DD /* OctokitListTableViewCell.swift */; };
+		944EF27724700758006352DD /* OctokitListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 944EF27524700758006352DD /* OctokitListTableViewCell.xib */; };
+		944EF27A24700A24006352DD /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF27924700A24006352DD /* UserDetailModel.swift */; };
+		944EF27C24700F26006352DD /* GetListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF27B24700F26006352DD /* GetListRequest.swift */; };
+		944EF27E24701437006352DD /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EF27D24701437006352DD /* ListService.swift */; };
+		949D372B247273CE0017D0FA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D372A247273CE0017D0FA /* CoreDataStack.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		943D078B2471E1D90019FB95 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		943D078D2471E2090019FB95 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		944EF20B2470026C006352DD /* YatraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YatraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		944EF20E2470026C006352DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		944EF2152470026C006352DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		944EF2182470026C006352DD /* YatraApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YatraApp.xcdatamodel; sourceTree = "<group>"; };
+		944EF21A2470026E006352DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		944EF21D2470026E006352DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		944EF21F2470026E006352DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		944EF23924700441006352DD /* OctokitListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctokitListPresenter.swift; sourceTree = "<group>"; };
+		944EF23A24700441006352DD /* OctokitListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctokitListRouter.swift; sourceTree = "<group>"; };
+		944EF23B24700441006352DD /* OctokitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctokitListViewController.swift; sourceTree = "<group>"; };
+		944EF23C24700441006352DD /* OctokitListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctokitListProtocols.swift; sourceTree = "<group>"; };
+		944EF23D24700441006352DD /* OctokitListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctokitListInteractor.swift; sourceTree = "<group>"; };
+		944EF23E24700441006352DD /* OctokitListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OctokitListViewController.xib; sourceTree = "<group>"; };
+		944EF24C247004D5006352DD /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		944EF24D247004D5006352DD /* ResponseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseProtocol.swift; sourceTree = "<group>"; };
+		944EF24E247004D5006352DD /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		944EF24F247004D5006352DD /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		944EF250247004D5006352DD /* DataOperationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataOperationProtocol.swift; sourceTree = "<group>"; };
+		944EF251247004D5006352DD /* VMultipartImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMultipartImage.swift; sourceTree = "<group>"; };
+		944EF252247004D5006352DD /* ServiceConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
+		944EF253247004D5006352DD /* MultipartRquest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartRquest.swift; sourceTree = "<group>"; };
+		944EF254247004D5006352DD /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		944EF255247004D5006352DD /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		944EF256247004D5006352DD /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		944EF257247004D5006352DD /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		944EF258247004D5006352DD /* JSONOperationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONOperationProtocol.swift; sourceTree = "<group>"; };
+		944EF259247004D5006352DD /* ApiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
+		944EF25A247004D5006352DD /* DataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataOperation.swift; sourceTree = "<group>"; };
+		944EF25B247004D5006352DD /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		944EF26D247005C0006352DD /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		944EF27024700614006352DD /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		944EF27224700660006352DD /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		944EF27424700758006352DD /* OctokitListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctokitListTableViewCell.swift; sourceTree = "<group>"; };
+		944EF27524700758006352DD /* OctokitListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OctokitListTableViewCell.xib; sourceTree = "<group>"; };
+		944EF27924700A24006352DD /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
+		944EF27B24700F26006352DD /* GetListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListRequest.swift; sourceTree = "<group>"; };
+		944EF27D24701437006352DD /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
+		949D372A247273CE0017D0FA /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		944EF2082470026C006352DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		944EF2022470026C006352DD = {
+			isa = PBXGroup;
+			children = (
+				944EF20D2470026C006352DD /* YatraApp */,
+				944EF20C2470026C006352DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		944EF20C2470026C006352DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				944EF20B2470026C006352DD /* YatraApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		944EF20D2470026C006352DD /* YatraApp */ = {
+			isa = PBXGroup;
+			children = (
+				949D372C247276170017D0FA /* CoreDataHelper */,
+				944EF24A247004D5006352DD /* CommonServices */,
+				944EF23724700418006352DD /* Modules */,
+				944EF20E2470026C006352DD /* AppDelegate.swift */,
+				944EF2142470026C006352DD /* Main.storyboard */,
+				944EF21A2470026E006352DD /* Assets.xcassets */,
+				944EF21C2470026E006352DD /* LaunchScreen.storyboard */,
+				944EF21F2470026E006352DD /* Info.plist */,
+				944EF2172470026C006352DD /* YatraApp.xcdatamodeld */,
+			);
+			path = YatraApp;
+			sourceTree = "<group>";
+		};
+		944EF23724700418006352DD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				944EF23824700425006352DD /* Octokit */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		944EF23824700425006352DD /* Octokit */ = {
+			isa = PBXGroup;
+			children = (
+				944EF24724700458006352DD /* Protocols */,
+				944EF2452470044B006352DD /* View */,
+				944EF24624700450006352DD /* Interactor */,
+				944EF24824700462006352DD /* Presenter */,
+				944EF27824700983006352DD /* Entity */,
+				944EF24924700469006352DD /* Router */,
+			);
+			path = Octokit;
+			sourceTree = "<group>";
+		};
+		944EF2452470044B006352DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				944EF23B24700441006352DD /* OctokitListViewController.swift */,
+				944EF23E24700441006352DD /* OctokitListViewController.xib */,
+				944EF27424700758006352DD /* OctokitListTableViewCell.swift */,
+				944EF27524700758006352DD /* OctokitListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		944EF24624700450006352DD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				944EF23D24700441006352DD /* OctokitListInteractor.swift */,
+				944EF27B24700F26006352DD /* GetListRequest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		944EF24724700458006352DD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				944EF23C24700441006352DD /* OctokitListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		944EF24824700462006352DD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				944EF23924700441006352DD /* OctokitListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		944EF24924700469006352DD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				944EF23A24700441006352DD /* OctokitListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		944EF24A247004D5006352DD /* CommonServices */ = {
+			isa = PBXGroup;
+			children = (
+				944EF26F247005F4006352DD /* Extensions */,
+				944EF26C2470059D006352DD /* Utils */,
+				944EF24B247004D5006352DD /* networking */,
+			);
+			path = CommonServices;
+			sourceTree = "<group>";
+		};
+		944EF24B247004D5006352DD /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				944EF24C247004D5006352DD /* NetworkOperation.swift */,
+				944EF24D247004D5006352DD /* ResponseProtocol.swift */,
+				944EF24E247004D5006352DD /* Service.swift */,
+				944EF24F247004D5006352DD /* ServiceProtocol.swift */,
+				944EF250247004D5006352DD /* DataOperationProtocol.swift */,
+				944EF251247004D5006352DD /* VMultipartImage.swift */,
+				944EF252247004D5006352DD /* ServiceConfig.swift */,
+				944EF253247004D5006352DD /* MultipartRquest.swift */,
+				944EF254247004D5006352DD /* RequestProtocol.swift */,
+				944EF255247004D5006352DD /* Response.swift */,
+				944EF256247004D5006352DD /* RequestMethod.swift */,
+				944EF257247004D5006352DD /* Request.swift */,
+				944EF258247004D5006352DD /* JSONOperationProtocol.swift */,
+				944EF259247004D5006352DD /* ApiConfig.swift */,
+				944EF25A247004D5006352DD /* DataOperation.swift */,
+				944EF25B247004D5006352DD /* NetworkError.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		944EF26C2470059D006352DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				943D078D2471E2090019FB95 /* LoadingView.swift */,
+				944EF26D247005C0006352DD /* Strings.swift */,
+				943D078B2471E1D90019FB95 /* ViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		944EF26F247005F4006352DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				944EF27224700660006352DD /* Dictionary.swift */,
+				944EF27024700614006352DD /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		944EF27824700983006352DD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				944EF27924700A24006352DD /* UserDetailModel.swift */,
+				944EF27D24701437006352DD /* ListService.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		949D372C247276170017D0FA /* CoreDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				949D372A247273CE0017D0FA /* CoreDataStack.swift */,
+			);
+			path = CoreDataHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		944EF20A2470026C006352DD /* YatraApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 944EF2222470026E006352DD /* Build configuration list for PBXNativeTarget "YatraApp" */;
+			buildPhases = (
+				944EF2072470026C006352DD /* Sources */,
+				944EF2082470026C006352DD /* Frameworks */,
+				944EF2092470026C006352DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YatraApp;
+			productName = YatraApp;
+			productReference = 944EF20B2470026C006352DD /* YatraApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		944EF2032470026C006352DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Yatra;
+				TargetAttributes = {
+					944EF20A2470026C006352DD = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 944EF2062470026C006352DD /* Build configuration list for PBXProject "YatraApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 944EF2022470026C006352DD;
+			productRefGroup = 944EF20C2470026C006352DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				944EF20A2470026C006352DD /* YatraApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		944EF2092470026C006352DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944EF21E2470026E006352DD /* LaunchScreen.storyboard in Resources */,
+				944EF27724700758006352DD /* OctokitListTableViewCell.xib in Resources */,
+				944EF21B2470026E006352DD /* Assets.xcassets in Resources */,
+				944EF24424700441006352DD /* OctokitListViewController.xib in Resources */,
+				944EF2162470026C006352DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		944EF2072470026C006352DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944EF25D247004D5006352DD /* ResponseProtocol.swift in Sources */,
+				944EF24124700441006352DD /* OctokitListViewController.swift in Sources */,
+				944EF26B247004D5006352DD /* NetworkError.swift in Sources */,
+				944EF27324700660006352DD /* Dictionary.swift in Sources */,
+				944EF24324700441006352DD /* OctokitListInteractor.swift in Sources */,
+				943D078E2471E2090019FB95 /* LoadingView.swift in Sources */,
+				949D372B247273CE0017D0FA /* CoreDataStack.swift in Sources */,
+				944EF265247004D5006352DD /* Response.swift in Sources */,
+				944EF262247004D5006352DD /* ServiceConfig.swift in Sources */,
+				944EF269247004D5006352DD /* ApiConfig.swift in Sources */,
+				944EF260247004D5006352DD /* DataOperationProtocol.swift in Sources */,
+				943D078C2471E1D90019FB95 /* ViewController.swift in Sources */,
+				944EF261247004D5006352DD /* VMultipartImage.swift in Sources */,
+				944EF24024700441006352DD /* OctokitListRouter.swift in Sources */,
+				944EF26E247005C0006352DD /* Strings.swift in Sources */,
+				944EF20F2470026C006352DD /* AppDelegate.swift in Sources */,
+				944EF263247004D5006352DD /* MultipartRquest.swift in Sources */,
+				944EF27C24700F26006352DD /* GetListRequest.swift in Sources */,
+				944EF25C247004D5006352DD /* NetworkOperation.swift in Sources */,
+				944EF268247004D5006352DD /* JSONOperationProtocol.swift in Sources */,
+				944EF26A247004D5006352DD /* DataOperation.swift in Sources */,
+				944EF2192470026C006352DD /* YatraApp.xcdatamodeld in Sources */,
+				944EF27124700614006352DD /* String.swift in Sources */,
+				944EF267247004D5006352DD /* Request.swift in Sources */,
+				944EF264247004D5006352DD /* RequestProtocol.swift in Sources */,
+				944EF25E247004D5006352DD /* Service.swift in Sources */,
+				944EF27624700758006352DD /* OctokitListTableViewCell.swift in Sources */,
+				944EF27A24700A24006352DD /* UserDetailModel.swift in Sources */,
+				944EF23F24700441006352DD /* OctokitListPresenter.swift in Sources */,
+				944EF24224700441006352DD /* OctokitListProtocols.swift in Sources */,
+				944EF27E24701437006352DD /* ListService.swift in Sources */,
+				944EF266247004D5006352DD /* RequestMethod.swift in Sources */,
+				944EF25F247004D5006352DD /* ServiceProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		944EF2142470026C006352DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				944EF2152470026C006352DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		944EF21C2470026E006352DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				944EF21D2470026E006352DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		944EF2202470026E006352DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		944EF2212470026E006352DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		944EF2232470026E006352DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K2GLNT2V3Z;
+				HOST_NAME = "https://api.github.com/orgs/octokit/";
+				INFOPLIST_FILE = YatraApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yatra.YatraApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		944EF2242470026E006352DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K2GLNT2V3Z;
+				HOST_NAME = "https://api.github.com/orgs/octokit/";
+				INFOPLIST_FILE = YatraApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yatra.YatraApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		944EF2062470026C006352DD /* Build configuration list for PBXProject "YatraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944EF2202470026E006352DD /* Debug */,
+				944EF2212470026E006352DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		944EF2222470026E006352DD /* Build configuration list for PBXNativeTarget "YatraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944EF2232470026E006352DD /* Debug */,
+				944EF2242470026E006352DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		944EF2172470026C006352DD /* YatraApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				944EF2182470026C006352DD /* YatraApp.xcdatamodel */,
+			);
+			currentVersion = 944EF2182470026C006352DD /* YatraApp.xcdatamodel */;
+			path = YatraApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 944EF2032470026C006352DD /* Project object */;
+}
